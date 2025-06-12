@@ -14,11 +14,14 @@ final class HomeController extends AbstractController
 
         $titlePartA = "Bienvenue sur mon Portfolio";
         $titlePartB = "Développeur Créatif & Passionné";
-
+        $titlePartC = "Me Contacter";
+        
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
             'titlePartA' => $titlePartA,
             'titlePartB' => $titlePartB,
+            'titlePartC' => $titlePartC,
+           
         ]);
     }
 }

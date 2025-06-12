@@ -1,22 +1,17 @@
 <section id="missions" class="missions">
-            <h2>Mes Missions</h2>
-            <div class="missions-grid">
-                <div class="mission-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Développement Web</h3>
-                    <p>Création de sites web modernes et responsifs</p>
-                </div>
-                <div class="mission-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Applications Mobiles</h3>
-                    <p>Développement d'applications iOS et Android</p>
-                </div>
-                <div class="mission-card">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Design UI/UX</h3>
-                    <p>Création d'interfaces utilisateur intuitives</p>
-                </div>
-            </div>
-        </section>
-
-        
+	<h2>Mes Missions</h2>
+	<div class="missions-grid">
+		{% include 'cardMissions/_cardMissions.html.twig' with {
+        title: 'Dévéloppement Web',
+        description: 'Création de sites web modernes et responsifs',
+    } %}
+		{% include 'cardMissions/_cardMissions.html.twig' with {
+		title: 'Applications Mobiles',
+		description: 'Développement d\'applications iOS et Android',
+	} %}
+	{% include 'cardMissions/_cardMissions.html.twig' with {
+		title: 'Design UI/UX',
+		description: 'Création d\'interfaces utilisateur intuitives',
+	} %}
+	</div>
+</section>

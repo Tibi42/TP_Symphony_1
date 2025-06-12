@@ -1,34 +1,3 @@
-/* Variables CSS */
-:root {
-    --primary-color: #FFA500; /* Orange vif */
-    --secondary-color: #FFD700; /* Jaune doré */
-    --text-color: #1A1A1A; /* Noir profond */
-    --background-color: #FFFFFF;
-    --accent-color: #FFE4B5; /* Pêche clair */
-    --dark-accent: #2D2D2D; /* Noir secondaire */
-    --gradient-start: #FFA500;
-    --gradient-end: #FFD700;
-    --transition: all 0.3s ease;
-}
-
-/* Reset et styles de base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
-
 /* Header et Navigation */
 .header {
     position: fixed;

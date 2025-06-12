@@ -1,32 +1,20 @@
 <section id="projets" class="projects">
-            <h2>Mes Projets</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="https://picsum.photos/seed/project2/800/600?random=11" alt="Projet 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>Projet E-commerce</h3>
-                        <p>Site web de commerce en ligne avec paiement intégré</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="https://picsum.photos/seed/project2/800/600?random=1" alt="Projet 2">
-                    </div>
-                    <div class="project-info">
-                        <h3>Application Mobile</h3>
-                        <p>Application de suivi de fitness</p>
-                        <div class="project-tags">
-                            <span>Flutter</span>
-                            <span>Firebase</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
+	<h2>Mes Projets</h2>
+	<div class="projects-grid">
+		{% include 'cardProjets/_cardProjets.html.twig' with {
+            title: 'Projet E-commerce',
+            para: 'Site web de commerce en ligne avec paiement intégré',
+            image: 'https://picsum.photos/seed/project2/800/600?random=11',
+            boutton1: 'React',
+            boutton2: 'Node.js',
+            boutton3: 'MongoDB',
+        } %}
+		{% include 'cardProjets/_cardProjets.html.twig' with {
+            title: 'Application Mobile',
+            para: 'Application de suivi de fitness',
+            image: 'https://picsum.photos/seed/project2/800/600?random=11',
+            boutton1: 'Flutter',
+            boutton2: 'Firebase',
+        } %}
+	</div>
+</section>

@@ -1,0 +1,16 @@
+<article class="project-card">
+	<div class="project-image">
+		<img src="{{ image|default('') }}" alt="{{ title|default('Image du projet') }}">
+	</div>
+	<div class="project-info">
+		<h3>{{ title|default('Titre du projet') }}</h3>
+		<p>{{ para|default('Description du projet') }}</p>
+		<div class="project-tags">
+			{% include 'cardProjetsBoutton/_cardProjetsBoutton.html.twig' with {
+                boutton1: boutton1|default(null),
+                boutton2: boutton2|default(null),
+                boutton3: boutton3|default(null)
+            } %}
+		</div>
+	</div>
+</article>

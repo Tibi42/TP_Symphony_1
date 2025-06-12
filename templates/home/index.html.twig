@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!
+{% block title %}Portfolio 6 juin 2025
 {% endblock %}
 
 {% block javascripts %}
@@ -12,6 +12,10 @@
 
 {% block body %}
 
+	{% include 'hero/_hero.html.twig' %}
+	{% include 'missionCard/_missionCard.html.twig' %}
+	{% include 'projetsCard/_projetsCard.html.twig' %}
+	{# {% include 'ProjetCardAray/_projetCardArray.html.twig' %} #}
+	{% include 'contact/_contact.html.twig' %}
 
-	
 {% endblock %}
